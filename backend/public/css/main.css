@@ -1,0 +1,16 @@
+/*!**************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./frontend/src/style.css ***!
+  \**************************************************************************/
+html , body {
+    background-color: #ddd;
+    box-sizing: content-box;
+    margin: 0px;
+}
+img {
+    width: 50px;
+    height: 100px;
+}
+#favicon img {
+    width: 16px;
+    height: 16px;
+}
