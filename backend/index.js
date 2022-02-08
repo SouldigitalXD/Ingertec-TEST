@@ -1,6 +1,7 @@
 
 const express = require('express');
 const morgan  = require('morgan');
+require('dotenv').config();
 // const multer  = require('multer');
 const path    = require('path');
 const cors    = require('cors');
@@ -9,7 +10,7 @@ const cors    = require('cors');
 const app = express();
 
 //Settings
-app.set('port', 3000);
+app.set('port', process.env.PORT || 3000);
 require('./database');
 
 // Middlewares

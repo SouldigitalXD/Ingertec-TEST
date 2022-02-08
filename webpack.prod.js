@@ -63,7 +63,7 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            filename: 'main.html',
+            filename: 'template/main.html',
             template: './frontend/src/index.html',
         }),
 
@@ -75,7 +75,7 @@ module.exports = {
         new CopyPlugin({
             patterns: [
                 {
-                    from: "frontend/src/assets", to: "assets",
+                    from: "frontend/src/assets/img", to: "assets/img",
                 },
             ],
         }),
