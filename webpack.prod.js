@@ -11,7 +11,7 @@ const path         = require('path');
 module.exports = {
     mode: 'production',
 
-    entry: './frontend/src/app.js',
+    entry: ["regenerator-runtime/runtime.js", './frontend/src/app.js'],
     output: {
         clean: true,
         filename: 'js/main.[contenthash].js'

@@ -1,5 +1,6 @@
 // import { RegisterService } from "../class/RegisterService";
 import { obtenerRegistro } from "./http-provider";
+import 'regenerator-runtime/runtime';
 
 const body = document.body; 
 let btnCargar , btnReset;
