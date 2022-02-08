@@ -14,7 +14,6 @@ module.exports = {
     entry: './frontend/src/app.js',
     output: {
         clean: true,
-        path: path.join(__dirname, 'backend/public'),
         filename: 'js/main.[contenthash].js'
     },
 
@@ -63,7 +62,7 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            filename: 'template/main.html',
+            // filename: 'template/main.html',
             template: './frontend/src/index.html',
         }),
 
