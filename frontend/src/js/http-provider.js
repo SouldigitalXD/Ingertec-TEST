@@ -1,6 +1,6 @@
 import 'regenerator-runtime/runtime';
 
-const URL = 'http://localhost:3000/api/register';
+const URL = '/api/register';
 
 const obtenerRegistro = async(idNumber) => {
 

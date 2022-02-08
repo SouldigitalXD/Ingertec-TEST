@@ -3,7 +3,7 @@ import 'regenerator-runtime/runtime';
 export class RegisterService {
 
     constructor() {
-        this.URL = 'http://localhost:3000/api/register';
+        this.URL = '/api/register';
     }
 
     async obtenerRegistro(id) {
