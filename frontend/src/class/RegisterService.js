@@ -24,3 +24,5 @@ export class RegisterService {
     }
 
 };
+
+//no lo use , pero funciona :)

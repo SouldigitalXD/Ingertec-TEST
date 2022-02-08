@@ -1,28 +1,25 @@
 // import { RegisterService } from "../class/RegisterService";
 import { obtenerRegistro } from "./http-provider";
 
-
+const body = document.body; 
 let btnCargar , btnReset;
 
 const cargarTextoHtml = () => {
-    const seccion = document.querySelector('#container-main');
-    const img = document.createElement('img');
-    
 
     const html = `
-        <div id="containerTextArea" class="hstack gap-3">
-            <textarea id="textArea" class="form-control me-auto" cols="1" rows="1" placeholder="Presiona el boton Cargar..."
+        <div id="containerTextArea" class="hstack gap-3 d-flex p-2">
+            <textarea id="textArea" class="form-control me-auto shadow-sm" cols="1" rows="1" placeholder="Presiona el boton Cargar..."
                 aria-label="Presiona el boton Cargar..."></textarea>
             <button id="btnCargar" type="button" class="btn btn-secondary">Cargar</button>
-            <div class="vr"></div>
             <button id="btnReset" type="button" class="btn btn-outline-danger">Reset</button>
         </div>
     `;
     
     const divCargarRegistro = document.createElement('div');
+    divCargarRegistro.classList.add('container');
     divCargarRegistro.innerHTML = html;
 
-    seccion.appendChild(divCargarRegistro);
+    body.append(divCargarRegistro);
 
 }
 

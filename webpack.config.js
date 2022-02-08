@@ -1,4 +1,3 @@
-
 const HtmlWebpackPlugin    = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin    = require("copy-webpack-plugin");
@@ -43,10 +42,10 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            // filename: 'main.html',
+            // filename: 'template/index.html',
             template: './frontend/src/index.html',
         }),
-
+        
         new MiniCssExtractPlugin({
             filename: 'css/[name].css',
             ignoreOrder: false
@@ -57,6 +56,7 @@ module.exports = {
                 {
                     from: "frontend/src/assets/img", to: "assets/img",
                 },
+
             ],
         }),
     ],
