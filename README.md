@@ -20,8 +20,9 @@ http://localhost:3000/  o  https://ingertec-test.herokuapp.com/
 
 Para mas informacion no dudes en consultar el archivo package.json en donde estaran los siguientes comandos:
 ```
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development nodemon backend/index.js --ignore frontend",
+    "start": "cross-env NODE_ENV=production node backend/index.js",
     "build:dev": "webpack --config webpack.config.js",
     "production": "webpack --config webpack.prod.js",
-    "start": "webpack serve --config webpack.config.js --open --port=8080"
+    "serve": "webpack serve --config webpack.config.js --open --port=8080"
 ```
